@@ -1,5 +1,6 @@
 # Spring PetClinic Sample Application
 # Adapt some commands Jaap Bakker
+# Vrijdag de 5de aanpassing
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
