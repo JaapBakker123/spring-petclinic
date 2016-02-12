@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class SeleniumTest {
 
@@ -18,7 +19,7 @@ public class SeleniumTest {
 	
 	@BeforeClass
 	public static void setUpClass() throws IOException, AWTException {
-		driver = new FirefoxDriver();
+		driver = new HtmlUnitDriver(false);
 	}
 
 	@AfterClass
