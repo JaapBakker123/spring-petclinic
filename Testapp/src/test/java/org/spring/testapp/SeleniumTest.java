@@ -1,14 +1,33 @@
 package org.spring.testapp;
 
+import java.awt.AWTException;
 import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumTest {
+
+	static protected WebDriver driver;
+	
+	@BeforeClass
+	public static void setUpClass() throws IOException, AWTException {
+		driver = new FirefoxDriver();
+	}
+
+	@AfterClass
+	public static void cleanUp() {
+		if (driver != null) {
+			driver.close();
+			driver.quit();
+		}
+	}
 
 	public SeleniumTest() {
 		super();
