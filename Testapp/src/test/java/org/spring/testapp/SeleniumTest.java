@@ -50,7 +50,7 @@ public class SeleniumTest {
 	protected String getHostName() {
 		String hostName = System.getProperty("HOSTNAME");
 		if (hostName == null) {
-			hostName = "52.49.186.45";
+			hostName = "52.49.163.172";
 		}
 		return hostName;
 	}
